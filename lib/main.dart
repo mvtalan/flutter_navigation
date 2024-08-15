@@ -31,6 +31,14 @@ class HomePage extends StatelessWidget {
         backgroundColor: Color.fromARGB(255, 206, 244, 54),
         title: Text('Home Page'),
     ),
+    body: Center(
+      child: ElevatedButton(
+        onPressed: () {
+          Navigator.of(context).pop();
+        },
+        child: Text('Pop the stack'),
+        ),
+    ),
     bottomNavigationBar: BottomAppBar(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
